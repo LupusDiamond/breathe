@@ -55,7 +55,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-size: cover;
   z-index: 1;
+  filter: brightness(0.5);
 }
 
 .page2 h2 {
@@ -69,7 +71,7 @@
   align-items: center;
   text-align: center;
   font-family: Montserrat;
-  background: linear-gradient(rgba(255,255,255,1), rgba(100,100,100,1));
+  background: linear-gradient(rgba(255,255,255,1), rgba(120,120,120,1));
   mix-blend-mode: screen;
 }
 
@@ -99,5 +101,9 @@
   .page2 video {
     height: 100vh;
     width: auto;
+  }
+
+  .page2 h2 {
+    font-size:18vw ;
   }
 }
