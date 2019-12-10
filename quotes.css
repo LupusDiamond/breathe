@@ -47,21 +47,30 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .page2 video {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
 .page2 h2 {
   position: absolute;
+  display: flex;
   width: 100%;
   height: 100vh;
   z-index: 2;
+  font-size: 10vw;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  font-family: Montserrat;
+  background: linear-gradient(rgba(255,255,255,1), rgba(100,100,100,1));
+  mix-blend-mode: screen;
 }
 
 @media (max-width: 768px) {
@@ -85,5 +94,10 @@
 
   .quotes h1 {
     font-size: 15vw;
+  }
+
+  .page2 video {
+    height: 100vh;
+    width: auto;
   }
 }
