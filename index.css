@@ -2,50 +2,51 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.main {
-  /*background: url("https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");*/
+.bg-img {
+  background: url("https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-}
-
-.banner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
 }
 
 h1 {
-  font-size: 400px;
+  font-size: 170px;
+  font-weight: bold;
+  letter-spacing: 0.9rem;
+  z-index: 2;
+  position: absolute;
+  bottom: 100px;
+  left: 90px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 80px;
   font-weight: bold;
   letter-spacing: 0.7rem;
+  z-index: 2;
+  position: absolute;
+  bottom: 260px;
+  left: 100px;
+  text-transform: uppercase;
 }
 
-h1 {
-  margin: 0;
+a {
+  /*z-index: 2;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
-  color: #000000;
-  text-transform: uppercase;
-  line-height: 100vh;
-  mix-blend-mode: screen;
+  bottom: 100px;
+  left: 100px;*/
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 2;
 }
