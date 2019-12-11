@@ -5,21 +5,25 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
-.main {
-  width: 100%;
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
-  background-size: cover;
-}
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
 
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+  background-size: cover;
+}
+
 .quotes {
+  z-index: 2;
   overflow: hidden;
   padding-left: 4em;
   flex-basis: 100%;
@@ -38,6 +42,30 @@
 .quotes h1 {
   font-family: Montserrat;
   font-size: 10vw;
+}
+
+.quotes button {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 900;
+  padding: 0.5em 1em;
+  border: 2px solid #000000;
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.quotes i {
+  padding-left: 1rem;
+}
+
+.quotes button:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
 /* Page 2 */
@@ -71,19 +99,15 @@
   align-items: center;
   text-align: center;
   font-family: Montserrat;
-  background: linear-gradient(rgba(255,255,255,1), rgba(120,120,120,1));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(100, 100, 100, 1));
   mix-blend-mode: screen;
 }
 
-@media (max-width: 768px) {
-
-  .main {
-    width: 100%;
-    height: 100vh;
-    background: url("src/mobile-bg.jpg");
+@media (max-width: 1024px) {
+  .bg-img {
+    background: url("src/bg-mobile.jpg");
     background-size: cover;
   }
-
 
   .quotes {
     padding-left: 1.5em;
@@ -98,12 +122,16 @@
     font-size: 15vw;
   }
 
+  .quotes button {
+    margin-left: 5px;
+  }
+
   .page2 video {
     height: 100vh;
     width: auto;
   }
 
   .page2 h2 {
-    font-size:18vw ;
+    font-size: 18vw;
   }
 }
