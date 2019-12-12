@@ -37,11 +37,13 @@
   padding-left: 10px;
   font-family: "Josefin Sans";
   font-size: 3vw;
+  color: #444444;
 }
 
 .quotes h1 {
   font-family: Montserrat;
-  font-size: 10vw;
+  font-size: 9vw;
+  color: #222222;
 }
 
 .quotes button {
@@ -50,10 +52,10 @@
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  color: #000000;
+  color: #2e2e2e;
   font-weight: 900;
   padding: 0.5em 1em;
-  border: 2px solid #000000;
+  border: 2px solid #2e2e2e;
   margin-top: 5px;
   border-radius: 5px;
   margin-left: 10px;
@@ -64,7 +66,7 @@
 }
 
 .quotes button:hover {
-  background: #000000;
+  background: #2e2e2e;
   color: #ffffff;
 }
 
@@ -99,13 +101,50 @@
   align-items: center;
   text-align: center;
   font-family: Montserrat;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(100, 100, 100, 1));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(180, 180, 180, 1), rgba(255, 255, 255, 1));
   mix-blend-mode: screen;
 }
 
-@media (max-width: 1024px) {
+/* Page Three */
+
+.page3{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1543416112-039c9e03d463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  filter: brightness(0.9);
+}
+
+.page3 p {
+  line-height: 1.2;
+  font-size: 6vw;
+  font-family: "Josefin Sans";
+  font-weight: 900;
+  padding: 0 0.3em;
+  color: #222222;
+}
+
+.page3 p:nth-child(1) {
+  position: absolute;
+  top: 10%;
+  text-align: left;
+}
+
+.page3 p:nth-child(2) {
+  position: absolute;
+  bottom: 10%;
+  text-align: right;
+  color: #ffffff;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
   .bg-img {
-    background: url("src/bg-mobile.jpg");
+    background: url("src/bg-tablet.jpg");
     background-size: cover;
   }
 
@@ -119,7 +158,7 @@
   }
 
   .quotes h1 {
-    font-size: 15vw;
+    font-size: 13vw;
   }
 
   .quotes button {
@@ -131,7 +170,25 @@
     width: auto;
   }
 
+  .page3 p {
+    font-size: 10vw;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .bg-img {
+    background: url("src/bg-mobile.jpg");
+    background-size: cover;
+  }
+
   .page2 h2 {
     font-size: 18vw;
   }
+
+  .page3 p {
+    font-size: 14vw;
+  }
+
 }
