@@ -100,18 +100,22 @@
   margin: auto;
   align-items: center;
   text-align: center;
-  font-family: 'Montserrat';
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(160, 160, 160, 1), rgba(255, 255, 255, 1));
+  font-family: "Montserrat";
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(160, 160, 160, 1),
+    rgba(255, 255, 255, 1)
+  );
   mix-blend-mode: screen;
 }
 
 /* Page Three */
 
-.page3{
+.page3 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url('https://images.unsplash.com/photo-1543416112-039c9e03d463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background: url("https://images.unsplash.com/photo-1543416112-039c9e03d463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   background-size: cover;
   filter: brightness(0.9);
 }
@@ -139,12 +143,21 @@
 }
 
 .page3 p span {
-  font-weight: 900;
+  /*font-weight: 900;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
+  position: relative;
 }
 
-
+.page3 p span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  background: red;
+  bottom: 0;
+  left: 0;
+}
 
 @media screen and (max-width: 1024px) {
   .bg-img {
@@ -177,9 +190,7 @@
   .page3 p {
     font-size: 8vw;
   }
-
 }
-
 
 @media screen and (max-width: 700px) {
   .bg-img {
@@ -194,5 +205,4 @@
   .page3 p {
     font-size: 13vw;
   }
-
 }
