@@ -100,8 +100,8 @@
   margin: auto;
   align-items: center;
   text-align: center;
-  font-family: Montserrat;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(180, 180, 180, 1), rgba(255, 255, 255, 1));
+  font-family: 'Montserrat';
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(160, 160, 160, 1), rgba(255, 255, 255, 1));
   mix-blend-mode: screen;
 }
 
@@ -135,10 +135,14 @@
   position: absolute;
   bottom: 10%;
   text-align: right;
-  color: #ffffff;
+  color: #dddddd;
 }
 
-
+.page3 p span {
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
 
 
