@@ -4,35 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Breathe</title>
   </head>
   <body>
-    <div class="main">
+    <!--Page One-->
+
+    <div class="container">
       <div class="bg-img"></div>
-      <div class="container">
-        <h5>Just</h5>
-        <h1>Breathe</h1>
-        <a href="#" class="btn purple darken-3 customclass"
-          ><i class="material-icons right">arrow_forward</i> Start Now</a
-        >
+      <div class="quotes">
+        <h6>Just</h6>
+        <h1>BREATHE</h1>
+        <button>
+          Get Started <i class="material-icons right">arrow_forward</i>
+        </button>
       </div>
     </div>
+
+    <!--Page Two-->
+
+    <div class="page2" data-aos="zoom-in">
+      <video src="src/run_Slomo.mp4" loop autoplay muted></video>
+      <h2>You miss 100% of the shots you don’t take.</h2>
+    </div>
+
+    <!-- Page Three-->
+
+    <div class="page3" data-aos="fade-up">
+      <p>Sometimes later becomes never.</p>
+      <p>
+        So Push yourself, because <span>no one</span> else is going to do it for
+        you.
+      </p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="ft-left">
+        <span>Social</span>
+        <ul>
+          <a href="#"><li>Instagram</li></a>
+          <a href="#"><li>Facebook</li></a>
+          <a href="#"><li>Twitter</li></a>
+        </ul>
+      </div>
+      <div class="ft-right">
+        <span>Contact</span>
+        <ul>
+          <li>e-mail: justbreathe@example.com</li>
+          <li>phone: +91 123-456-7890</li>
+        </ul>
+      </div>
+    </footer>
+
+    <span class="copyright">&copy; 2019 Just Breathe</span>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
