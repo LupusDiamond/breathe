@@ -190,7 +190,7 @@ html {
 .page5 {
   width: 100%;
   height: 100vh;
-  background: url("src/page15.jpg");
+  background: url("src/page5.jpg");
   background-size: cover;
   object-fit: cover;
   display: flex;
@@ -296,6 +296,10 @@ button:hover a {
     font-size: 10vw;
   }
 
+  .page5 p {
+    font-size: 13vw;
+  }
+
 }
 
 
@@ -317,4 +321,9 @@ button:hover a {
   .page4 p {
     font-size: 16vw;
   }
+
+  .page5 p {
+    font-size: 16vw;
+  }
+
 }
